@@ -87,6 +87,45 @@ student['email'] = "kiran.mulmi@gmail.com";
 student.email = "kiran.mulmi@gmail.com"; // Never do that, it wont work
 
 // 5)your work => create 5 more objects like this
+citizen['name'] = "sita"; // ram is replaced by sita
+const citizen = {
+    name: "ram",
+    ssn: "213-123-3445",
+    mailing_address: "florida",
+    phone_no: 3232112345,
+    dob: "05-02-1992"
+
+};
+university["address"] = "Missouri"; // Indiana is replaced by Missouri
+const university = {
+    name: "purdue",
+    date_of_estd: 1990,
+    address: "Indiana",
+    total_majors: 25
+};
+Mobile.model = "s6"; //j7 prime is replaced by s6
+const Mobile = {
+    brand: "samsung",
+    color: "black",
+    model: "j7 prime",
+    type: "android"
+};
+food.item = "momo"; //chicken is replaced by momo
+let food = {
+    item: "chicken",
+    type: "thai",
+    amount: "2 plate"
+};
+
+flower.color = "red"; // white is replaced by red
+let flower = {
+    name: "rose",
+    color: "white",
+    kind: "hybrid"
+
+};
+
+
 
 // =========================== JSON Object Array ==============
 
