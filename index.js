@@ -88,6 +88,9 @@ student.email = "kiran.mulmi@gmail.com"; // Never do that, it wont work
 
 // 5)your work => create 5 more objects like this
 citizen['name'] = "sita"; // ram is replaced by sita
+citizen['race'] = "white";
+let ctz = citizen.name; //ram
+
 const citizen = {
     name: "ram",
     ssn: "213-123-3445",
@@ -96,7 +99,11 @@ const citizen = {
     dob: "05-02-1992"
 
 };
+
+
 university["address"] = "Missouri"; // Indiana is replaced by Missouri
+university['founder'] = "John";
+let uni = university.name; //purdue
 const university = {
     name: "purdue",
     date_of_estd: 1990,
@@ -104,6 +111,8 @@ const university = {
     total_majors: 25
 };
 Mobile.model = "s6"; //j7 prime is replaced by s6
+Mobile['functions'] = "camera"
+let mob = Mobile.brand; //samsung
 const Mobile = {
     brand: "samsung",
     color: "black",
@@ -111,6 +120,8 @@ const Mobile = {
     type: "android"
 };
 food.item = "momo"; //chicken is replaced by momo
+food['spicy_level'] = "mild";
+let food = food.item; //chicken
 let food = {
     item: "chicken",
     type: "thai",
@@ -118,6 +129,8 @@ let food = {
 };
 
 flower.color = "red"; // white is replaced by red
+flower['season'] = "spring"
+let flo = flower.name; //rose
 let flower = {
     name: "rose",
     color: "white",
