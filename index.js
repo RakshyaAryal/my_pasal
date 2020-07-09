@@ -141,9 +141,89 @@ let flower = {
 
 
 // =========================== JSON Object Array ==============
+let mobiles = [
+    {
+        brand: "samsung",
+        color: "black",
+        model: "j7 prime",
+        type: "android"
+    },
+    {
+        brand: "samsung",
+        color: "black",
+        model: "A51",
+        type: "android"
+    },
+    {
+        brand: "iphone",
+        color: "golden",
+        model: "11 pro max",
+        type: "ios"
+    }
+];
 
+// create five more object array like this
+// example
+let model = mobiles[1].model; // A51
+let type = mobiles[2].type; // ios
 
-//JSON Object value add/remove
+mobiles[2].color = "red"; // Replace golden by red
 
-//For loop
+//For loop (Must be array)
+
+//EG 1: WAP to print all array element
+let animals = ["tiger", "lion", "dog"];
+for (let animal of animals) {
+    console.log(animal);
+}
+
+// EG 2: WAP to print all array object
+
+let mobiles = [
+    {
+        brand: "samsung",
+        color: "black",
+        model: "j7 prime",
+        type: "android"
+    },
+    {
+        brand: "samsung",
+        color: "black",
+        model: "A51",
+        type: "android"
+    },
+    {
+        brand: "iphone",
+        color: "golden",
+        model: "11 pro max",
+        type: "ios"
+    }
+];
+
+for (let mobile of mobiles) {
+    console.log(mobile.brand);
+    console.log(mobile.color);
+    console.log(mobile.model);
+    console.log(mobile.type);
+    console.log('-------------');
+}
+
+// next type
+for (let i = 0; i < animals.length; i++) {
+    console.log(animals[i].brand);
+    console.log(animals[i].color);
+    console.log(animals[i].model);
+    console.log(animals[i].type);
+}
+
+for (let i = 0; i < mobiles.length; i++) {
+    console.log(mobiles[i]);
+}
+
+/**
+ * https://www.w3schools.com/js/js_arrays.asp
+ * https://www.w3schools.com/js/js_array_methods.asp
+ * https://www.w3schools.com/js/js_array_sort.asp
+ * https://www.w3schools.com/js/js_array_iteration.asp
+ * */
 
