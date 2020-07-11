@@ -101,8 +101,7 @@ const citizen = {
 };
 
 
-university["address"] = "Missouri"; // Indiana is replaced by Missouri
-university['founder'] = "John";
+
 let uni = university.name; //purdue
 const university = {
     name: "purdue",
@@ -110,8 +109,9 @@ const university = {
     address: "Indiana",
     total_majors: 25
 };
-Mobile.model = "s6"; //j7 prime is replaced by s6
-Mobile['functions'] = "camera"
+university["address"] = "Missouri"; // Indiana is replaced by Missouri
+university['founder'] = "John";
+
 let mob = Mobile.brand; //samsung
 const Mobile = {
     brand: "samsung",
@@ -119,24 +119,30 @@ const Mobile = {
     model: "j7 prime",
     type: "android"
 };
-food.item = "momo"; //chicken is replaced by momo
-food['spicy_level'] = "mild";
-let food = food.item; //chicken
+Mobile.model = "s6"; //j7 prime is replaced by s6
+Mobile['functions'] = "camera";
+
+
 let food = {
     item: "chicken",
     type: "thai",
     amount: "2 plate"
 };
+food.item = "momo"; //chicken is replaced by momo
+food['spicy_level'] = "mild";
+let food = food.item; //chicken
 
-flower.color = "red"; // white is replaced by red
-flower['season'] = "spring"
-let flo = flower.name; //rose
+
+
 let flower = {
     name: "rose",
     color: "white",
     kind: "hybrid"
 
 };
+flower.color = "red"; // white is replaced by red
+flower['season'] = "spring";
+let flo = flower.name; //rose
 
 
 
@@ -175,6 +181,31 @@ mobiles[2].color = "red"; // Replace golden by red
 let animals = ["tiger", "lion", "dog"];
 for (let animal of animals) {
     console.log(animal);
+}
+
+let birds = ["parrot", "owl", "crow"];
+for (let bird of birds) {
+    console.log(bird);
+}
+
+let mobiles = ["name", "model", "color"];
+for (let mobile of mobiles){
+    console.log(mobile);
+}
+
+let flowers = ["name", "type", "size"];
+for (let flower of flowers){
+    console.log(flower);
+}
+
+let foods= ["name", "spicy_level", "type", "weight"];
+for (let food of foods){
+    console.log(food);
+}
+
+let employee = ["employee_id", "name", "address", "phone_no", "ssn_no"];
+for (let employee of employees){
+    console.log(employee);
 }
 
 // EG 2: WAP to print all array object
@@ -219,6 +250,133 @@ for (let i = 0; i < animals.length; i++) {
 for (let i = 0; i < mobiles.length; i++) {
     console.log(mobiles[i]);
 }
+
+// Assignment
+let employees = [
+    {
+        name: "ram",
+        age: 20,
+        ssnNo: '123-234-333',
+        sex:  "Male",
+        phoneNo: "434-343-3343"
+    },
+
+    {
+        name: "heena",
+        age: 35,
+        ssnNo: "465-435-354",
+        sex: "Female",
+        phoneNo: "128-435-3534"
+    },
+
+    {
+        name: "serry",
+        age: 25,
+        ssnNo: "637-434-322",
+        sex: "Female",
+        phoneNo: "452-433-3223"
+
+    },
+];
+
+let sex = employees[0].sex; //Male
+let age = employees[2].age; //25
+let name = employees[1].name; //heena
+
+for (let employee of employees)
+{
+    console.log(employee.name);
+    console.log(employee.ssnNo);
+    console.log(employee.phoneNo);
+    console.log(employee.age);
+    console.log(employee.sex);
+}
+
+//OR
+
+for (let i = 0; i < employee.length; i++)
+{
+    console.log(employee[i]);
+}
+
+for (let i=0; i<employees.length; i++)
+{
+    console.log(employee[i].name);
+    console.log(employee[i].sex);
+    console.log(employee[i].age);
+    console.log(employee[i].ssnNo);
+    console.log(employee[i].phoneNo);
+
+}
+
+let schools = [
+    {
+        name: "SVI",
+        location: "banasthali",
+        faculties: "science"
+    },
+    {
+        name: "ktm",
+        location: "kathmandu",
+        faculties: "mgmt"
+
+    }
+];
+
+for(let school of schools)
+{
+    console.log(school.name);
+    console.log(school.location);
+    console.log(school.faculties);
+}
+
+for (let i=0; i<schools.length; i++)
+{
+    console.log(schools[i]);
+}
+
+for (i=0; i<schools.length; i++)
+{
+    console.log(schools[i].name);
+    console.log(schools[i].location);
+    console.log(schools[i].faculties);
+}
+
+let countries = [
+    {
+        name:"USA",
+        lattitude: 314.234234234,
+        longitude: 75334.45353
+    },
+
+    {
+        name: "Nepal",
+        lattitude: 343.43434,
+        longitude: 2324.435
+    }
+];
+
+for (let country of countries)
+{
+    console.log(country.name);
+    console.log(country.lattitude);
+    console.log(country.longitude);
+}
+
+for( let i = 0; i<countries.length; i++)
+{
+    console.log(countries[i]);
+
+}
+
+for (let i= 0; i<countries.length; i++)
+{
+    console.log(countries[i].name);
+    console.log(countries[i].latitude);
+    console.log(countries[i].longitude);
+
+}
+
 
 /**
  * https://www.w3schools.com/js/js_arrays.asp
