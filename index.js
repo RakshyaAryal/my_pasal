@@ -379,18 +379,23 @@ for (let i= 0; i<countries.length; i++)
 
 let numbers = [5, 4, 10, 8, 1, 6, 2, 7, 3, 9];
 
-for(let i= 0; i<numbers.length; i++)
+for(let i = 0; i < numbers.length; i++)
 {
-    for (let j=0; j<numbers.length; j++)
+    for (let j = i; j < numbers.length; j++)
     {
-        if (numbers[j]< temp) {
-            console.log(numbers[j]);
+        // Ascending Order
+        if(numbers[i] > numbers[j]) {
+        // if(numbers[i] < numbers[j]) { // Decending order
+            // swap logic
+            let tmp = numbers[i];
+            numbers[i] = numbers[j];
+            numbers[j] = tmp;
+
         }
-
     }
-    console.log(numbers[j]); //don't know what to print
-
 }
+
+console.log(numbers);
 
 /**
  * https://www.w3schools.com/js/js_arrays.asp
