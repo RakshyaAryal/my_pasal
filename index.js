@@ -376,7 +376,7 @@ for (let i= 0; i<countries.length; i++)
     console.log(countries[i].longitude);
 
 }
-
+// WAP to sort in ascending order
 let numbers = [5, 4, 10, 8, 1, 6, 2, 7, 3, 9];
 
 for(let i = 0; i < numbers.length; i++)
@@ -396,6 +396,67 @@ for(let i = 0; i < numbers.length; i++)
 }
 
 console.log(numbers);
+
+//WAP to sort in descending order
+
+let numbers = [2,6,1,4,5];
+
+for (i=0; i<numbers.length; i++)
+{
+    for (j=i; j<numbers.length; j++)
+    {
+        if (numbers[i]<numbers[j])
+        {
+            let temp = numbers[i];
+
+            numbers[i] = numbers[j];
+            numbers[j] = temp;
+
+        }
+
+    }
+
+}
+console.log(numbers);
+
+//WAP to find maximum number
+
+let numbers = [3,5,1,4];
+
+for (i= 0; i<numbers.length; i++){
+
+    for (j=i; j<numbers.length; j++){
+        if (numbers[i]<numbers[j])
+        {
+            let temp = numbers[i];
+            numbers[i] = numbers[j];
+            numbers[j] = temp;
+
+        }
+    }
+}
+console.log(numbers[0]);
+
+//WAP to find minimum number
+
+let numbers= [3,5,1,4,2];
+
+for(i=0; i<numbers.length; i++)
+{
+    for (j=i; j<numbers.length; j++)
+    {
+        if (numbers[i] > numbers[j])
+        {
+            let temp = numbers[i];
+
+            numbers[i] = numbers[j];
+            numbers[j] = temp;
+
+        }
+
+    }
+}
+console.log(numbers[0]);
 
 /**
  * https://www.w3schools.com/js/js_arrays.asp
