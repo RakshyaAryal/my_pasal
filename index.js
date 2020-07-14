@@ -419,44 +419,65 @@ for (i=0; i<numbers.length; i++)
 }
 console.log(numbers);
 
+//wap to count digit in a number eg 5654;
+let counter = 0;
+while (true) {
+
+    if(counter > 10) {
+        break;
+    }
+
+    counter++;
+}
+
+// while (counter < 10) {
+//
+//     counter++;
+// }
+
 //WAP to find maximum number
 
 let numbers = [3,5,1,4];
 
-for (i= 0; i<numbers.length; i++){
-
-    for (j=i; j<numbers.length; j++){
-        if (numbers[i]<numbers[j])
-        {
-            let temp = numbers[i];
-            numbers[i] = numbers[j];
-            numbers[j] = temp;
-
-        }
+let maxValue = numbers[0];
+for (let i = 0; i < numbers.length; i++ ) {
+    if(maxValue < numbers[i]) {
+        maxValue = numbers[i];
     }
 }
-console.log(numbers[0]);
+console.log(maxValue);
 
 //WAP to find minimum number
 
-let numbers= [3,5,1,4,2];
-
-for(i=0; i<numbers.length; i++)
-{
-    for (j=i; j<numbers.length; j++)
-    {
-        if (numbers[i] > numbers[j])
-        {
-            let temp = numbers[i];
-
-            numbers[i] = numbers[j];
-            numbers[j] = temp;
-
-        }
-
+// wap to filter out even number from array
+let numbers = [5, 4, 10, 8, 1, 6, 2, 7, 3, 9];
+//output [4, 10, 8, 6, 2]
+let evenNumArray = [];
+for (let i = 0; i < numbers.length; i++) {
+    if(numbers[i] % 2 === 0) { // 9%2 => 0.5, 8%2 => 0, 10%2 => 0
+       evenNumArray.push(numbers[i]);
     }
 }
-console.log(numbers[0]);
+
+console.log(evenNumArray);
+
+// wap to print natural number upto 100
+// 1,2,3,4
+for (let i = 1; i <= 100; i++) {
+    console.log(i);
+}
+// wap to print whole number upto 100
+for (let i = 0; i <= 100; i++) {
+    console.log(i);
+}
+
+// wap to print integer number -100 to 100
+for (let i = -100; i <= 100; i++) {
+    console.log(i);
+}
+
+//wap to check palindrome number eg 16461
+// for this take ref from array sorting
 
 /**
  * https://www.w3schools.com/js/js_arrays.asp
