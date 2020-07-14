@@ -486,4 +486,13 @@ for (let i = -100; i <= 100; i++) {
  * https://www.w3schools.com/js/js_array_iteration.asp
  * https://www.w3schools.com/js/js_loop_for.asp
  * */
+// nodejs, anuglarjs , react js, react native, vue native, vue js, express js, mongodb
+// crud on json object
+// json object = object => table row
+// json object array => table
+// spread operation (...)
+// normal array merge
+// object array merge
+// object merge
+// axios ajax call
 
