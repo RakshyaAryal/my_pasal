@@ -491,6 +491,86 @@ for (let i=0; i<num.length; i++)
 }
 console.log(minValue);
 
+let arr1 = [ 1,4,6,3,2];
+let arr2 = [5,3,7];
+
+// [1,4,6,3,2,5,3,7]
+let arr = [];
+for(let i = 0; i < arr1.length; i++) {
+    arr.push(arr1[i]);
+}
+for(let i = 0; i < arr2.length; i++) {
+    arr.push(arr2[i]);
+}
+
+console.log(arr);
+
+let arr1 = [ 1,4,6,3,2];
+let arr2 = arr1;
+arr2.push(99);
+console.log(arr1); // [ 1,4,6,3,2m 99]
+console.log(arr2); // [ 1,4,6,3,2, 99]
+
+let arr3 = [...arr1];
+arr3.push(100);
+console.log(arr3);
+
+let arr1 = [ 1,4,6,3,2];
+let arr2 = [5,3,7];
+
+//array combine
+let arr = [...arr1, ...arr2];
+console.log(arr);
+
+
+let university = {
+    name: "purdue",
+    date_of_estd: 1990,
+    address: "Indiana",
+    total_majors: 25
+};
+
+let uni = {...university};
+
+//uni.address = "sinamangal"; //method 1
+uni['address'] = "sinamangal"; // method 2
+// method 3
+let uni2 = {...university, address: "baneshwor"};
+
+console.log(university);
+console.log(uni);
+console.log(uni2);
+
+let students = [
+    {
+        fullName: "Kiran mulmi",
+        address: {
+            permanentAddress: "hetauda",
+            temporaryAddress: "kathmandu"
+        },
+        phone: {
+            ncell: 79889089,
+            ntc: 4423423
+        },
+        nickname: ['mullu', 'mulmi']
+    },
+    {
+        fullName: "Rakshya Aryal",
+        address: {
+            permanentAddress: "syangja",
+            temporaryAddress: "kathmandu"
+        },
+        phone: {
+            ncell: 53453453,
+            ntc: 534534534
+        },
+        nickname: ['golu', 'kaanchi']
+    }
+];
+
+console.log(students[0].nickname[1]);
+console.log(students[1].address.permanentAddress);
+
 //wap to check palindrome number eg 16461
 // for this take ref from array sorting
 
