@@ -570,6 +570,8 @@ let students = [
 
 console.log(students[0].nickname[1]);
 console.log(students[1].address.permanentAddress);
+student[0].phone.ntc = 23423423;
+student[0].phone['ntc'] = 23423423;
 
 //wap to check palindrome number eg 16461
 // for this take ref from array sorting
