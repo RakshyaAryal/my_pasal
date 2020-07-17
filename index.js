@@ -476,6 +476,21 @@ for (let i = -100; i <= 100; i++) {
     console.log(i);
 }
 
+//WAP to print minimum number.
+
+let num = [3, 4, 1, 5, 2];
+
+let minValue = num[0];
+for (let i=0; i<num.length; i++)
+{
+    if (num[i]< minValue)
+    {
+        minValue= num[i];
+    }
+
+}
+console.log(minValue);
+
 //wap to check palindrome number eg 16461
 // for this take ref from array sorting
 
