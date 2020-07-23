@@ -1,0 +1,23 @@
+//Basic Git commands
+create new branch
+git branch <branch name>
+
+//checkout command
+git checkout <branch name>
+
+
+// merge command
+git merge <branch name> // merge <branch name> into current branch
+
+// delete branch
+git branch -d <branch name>
+
+// pull command
+git pull
+
+//push comand
+git push
+
+// commit command
+git add .
+git commit -m "<commit message>"
