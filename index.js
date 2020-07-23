@@ -27,9 +27,9 @@ sum = rollNo + money + bird; // 14.5eagle
 let x = "I";
 let y = "am";
 let z = "boss";
-sum = x+y+z; //Iamboss
-sum = x+' ' + y + " "+ z + ".";//I am boss.
-sum = x.toLowerCase() + y.charAt(0).toUpperCase() + z.toUpperCase() +".";// iAmBOSS.
+sum = x + y + z; //Iamboss
+sum = x + ' ' + y + " " + z + ".";//I am boss.
+sum = x.toLowerCase() + y.charAt(0).toUpperCase() + z.toUpperCase() + ".";// iABOSS.
 
 //3)=================== Javascript Array ======================
 let animals = ["tiger", "lion", "dog"];
@@ -56,7 +56,7 @@ birds.push("osprey"); // ["eagle", "parrot", "pigeon", "crow", "osprey"]
 birds.push("owl"); // ["eagle", "parrot", "pigeon", "crow", "osprey", "owl"]
 
 //4) ======================= JSON Object (Most Important) =====================
-const bird = { name: "Eagle" , color: "black", weight: "5kg"};
+const bird = {name: "Eagle", color: "black", weight: "5kg"};
 const student = {
     name: "Kiran",
     rollNo: 2,
@@ -101,7 +101,6 @@ const citizen = {
 };
 
 
-
 let uni = university.name; //purdue
 const university = {
     name: "purdue",
@@ -133,7 +132,6 @@ food['spicy_level'] = "mild";
 let food = food.item; //chicken
 
 
-
 let flower = {
     name: "rose",
     color: "white",
@@ -143,7 +141,6 @@ let flower = {
 flower.color = "red"; // white is replaced by red
 flower['season'] = "spring";
 let flo = flower.name; //rose
-
 
 
 // =========================== JSON Object Array ==============
@@ -189,22 +186,22 @@ for (let bird of birds) {
 }
 
 let mobiles = ["name", "model", "color"];
-for (let mobile of mobiles){
+for (let mobile of mobiles) {
     console.log(mobile);
 }
 
 let flowers = ["name", "type", "size"];
-for (let flower of flowers){
+for (let flower of flowers) {
     console.log(flower);
 }
 
-let foods= ["name", "spicy_level", "type", "weight"];
-for (let food of foods){
+let foods = ["name", "spicy_level", "type", "weight"];
+for (let food of foods) {
     console.log(food);
 }
 
 let employee = ["employee_id", "name", "address", "phone_no", "ssn_no"];
-for (let employee of employees){
+for (let employee of employees) {
     console.log(employee);
 }
 
@@ -257,7 +254,7 @@ let employees = [
         name: "ram",
         age: 20,
         ssnNo: '123-234-333',
-        sex:  "Male",
+        sex: "Male",
         phoneNo: "434-343-3343"
     },
 
@@ -283,8 +280,7 @@ let sex = employees[0].sex; //Male
 let age = employees[2].age; //25
 let name = employees[1].name; //heena
 
-for (let employee of employees)
-{
+for (let employee of employees) {
     console.log(employee.name);
     console.log(employee.ssnNo);
     console.log(employee.phoneNo);
@@ -294,13 +290,11 @@ for (let employee of employees)
 
 //OR
 
-for (let i = 0; i < employee.length; i++)
-{
+for (let i = 0; i < employee.length; i++) {
     console.log(employee[i]);
 }
 
-for (let i=0; i<employees.length; i++)
-{
+for (let i = 0; i < employees.length; i++) {
     console.log(employee[i].name);
     console.log(employee[i].sex);
     console.log(employee[i].age);
@@ -323,20 +317,17 @@ let schools = [
     }
 ];
 
-for(let school of schools)
-{
+for (let school of schools) {
     console.log(school.name);
     console.log(school.location);
     console.log(school.faculties);
 }
 
-for (let i=0; i<schools.length; i++)
-{
+for (let i = 0; i < schools.length; i++) {
     console.log(schools[i]);
 }
 
-for (i=0; i<schools.length; i++)
-{
+for (i = 0; i < schools.length; i++) {
     console.log(schools[i].name);
     console.log(schools[i].location);
     console.log(schools[i].faculties);
@@ -344,7 +335,7 @@ for (i=0; i<schools.length; i++)
 
 let countries = [
     {
-        name:"USA",
+        name: "USA",
         lattitude: 314.234234234,
         longitude: 75334.45353
     },
@@ -356,21 +347,18 @@ let countries = [
     }
 ];
 
-for (let country of countries)
-{
+for (let country of countries) {
     console.log(country.name);
     console.log(country.lattitude);
     console.log(country.longitude);
 }
 
-for( let i = 0; i<countries.length; i++)
-{
+for (let i = 0; i < countries.length; i++) {
     console.log(countries[i]);
 
 }
 
-for (let i= 0; i<countries.length; i++)
-{
+for (let i = 0; i < countries.length; i++) {
     console.log(countries[i].name);
     console.log(countries[i].latitude);
     console.log(countries[i].longitude);
@@ -379,13 +367,11 @@ for (let i= 0; i<countries.length; i++)
 // WAP to sort in ascending order
 let numbers = [5, 4, 10, 8, 1, 6, 2, 7, 3, 9];
 
-for(let i = 0; i < numbers.length; i++)
-{
-    for (let j = i; j < numbers.length; j++)
-    {
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = i; j < numbers.length; j++) {
         // Ascending Order
-        if(numbers[i] > numbers[j]) {
-        // if(numbers[i] < numbers[j]) { // Decending order
+        if (numbers[i] > numbers[j]) {
+            // if(numbers[i] < numbers[j]) { // Decending order
             // swap logic
             let tmp = numbers[i];
             numbers[i] = numbers[j];
@@ -399,14 +385,11 @@ console.log(numbers);
 
 //WAP to sort in descending order
 
-let numbers = [2,6,1,4,5];
+let numbers = [2, 6, 1, 4, 5];
 
-for (i=0; i<numbers.length; i++)
-{
-    for (j=i; j<numbers.length; j++)
-    {
-        if (numbers[i]<numbers[j])
-        {
+for (i = 0; i < numbers.length; i++) {
+    for (j = i; j < numbers.length; j++) {
+        if (numbers[i] < numbers[j]) {
             let temp = numbers[i];
 
             numbers[i] = numbers[j];
@@ -423,7 +406,7 @@ console.log(numbers);
 let counter = 0;
 while (true) {
 
-    if(counter > 10) {
+    if (counter > 10) {
         break;
     }
 
@@ -437,11 +420,11 @@ while (true) {
 
 //WAP to find maximum number
 
-let numbers = [3,5,1,4];
+let numbers = [3, 5, 1, 4];
 
 let maxValue = numbers[0];
-for (let i = 0; i < numbers.length; i++ ) {
-    if(maxValue < numbers[i]) {
+for (let i = 0; i < numbers.length; i++) {
+    if (maxValue < numbers[i]) {
         maxValue = numbers[i];
     }
 }
@@ -454,8 +437,8 @@ let numbers = [5, 4, 10, 8, 1, 6, 2, 7, 3, 9];
 //output [4, 10, 8, 6, 2]
 let evenNumArray = [];
 for (let i = 0; i < numbers.length; i++) {
-    if(numbers[i] % 2 === 0) { // 9%2 => 0.5, 8%2 => 0, 10%2 => 0
-       evenNumArray.push(numbers[i]);
+    if (numbers[i] % 2 === 0) { // 9%2 => 0.5, 8%2 => 0, 10%2 => 0
+        evenNumArray.push(numbers[i]);
     }
 }
 
@@ -481,42 +464,40 @@ for (let i = -100; i <= 100; i++) {
 let num = [3, 4, 1, 5, 2];
 
 let minValue = num[0];
-for (let i=0; i<num.length; i++)
-{
-    if (num[i]< minValue)
-    {
-        minValue= num[i];
+for (let i = 0; i < num.length; i++) {
+    if (num[i] < minValue) {
+        minValue = num[i];
     }
 
 }
 console.log(minValue);
 
-let arr1 = [ 1,4,6,3,2];
-let arr2 = [5,3,7];
+let arr1 = [1, 4, 6, 3, 2];
+let arr2 = [5, 3, 7];
 
 // [1,4,6,3,2,5,3,7]
 let arr = [];
-for(let i = 0; i < arr1.length; i++) {
+for (let i = 0; i < arr1.length; i++) {
     arr.push(arr1[i]);
 }
-for(let i = 0; i < arr2.length; i++) {
+for (let i = 0; i < arr2.length; i++) {
     arr.push(arr2[i]);
 }
 
 console.log(arr);
 
-let arr1 = [ 1,4,6,3,2];
+let arr1 = [1, 4, 6, 3, 2];
 let arr2 = arr1;
 arr2.push(99);
-console.log(arr1); // [ 1,4,6,3,2m 99]
+console.log(arr1); // [ 1,4,6,3,2, 99]
 console.log(arr2); // [ 1,4,6,3,2, 99]
 
 let arr3 = [...arr1];
 arr3.push(100);
 console.log(arr3);
 
-let arr1 = [ 1,4,6,3,2];
-let arr2 = [5,3,7];
+let arr1 = [1, 4, 6, 3, 2];
+let arr2 = [5, 3, 7];
 
 //array combine
 let arr = [...arr1, ...arr2];
@@ -572,6 +553,42 @@ console.log(students[0].nickname[1]);
 console.log(students[1].address.permanentAddress);
 student[0].phone.ntc = 23423423;
 student[0].phone['ntc'] = 23423423;
+
+//Create 5 array with objects and
+
+
+let students = [
+    {
+        full_name: "Rakshya Aryal",
+        age: 22,
+        address: {
+            temporaryAddress: "Indiana",
+            permanentAddress: "Missouri"
+        },
+        courses: ["science", "math", "account", "AI"],
+    },
+    {
+        full_name: "Shyam Aryal",
+        age: 25,
+        address: {
+            temporaryAddress: "Texas",
+            permanentAddress: "Ktm"
+        },
+        courses: ["java", "statistics", "math"]
+
+    }
+];
+
+console.log(students[0].address.permanentAddress); //Missouri
+students[0].address.permanentAddress = "Syangja"; //Replace Missouri with Syangja
+//console.log(students);
+
+console.log(students[1].courses[0]);// java
+students[1].courses[0] = "english"; //replace java with english
+//console.log(students);
+
+console.log(students[1].age); //25
+
 
 //wap to check palindrome number eg 16461
 // for this take ref from array sorting
